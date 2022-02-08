@@ -26,7 +26,7 @@ html{
     scroll-padding-top: 9rem;
 }
 html::-webkit-scrollbar{
-    width: 8rem;
+    width: .8rem;
 }
 html::-webkit-scrollbar-track{
     background: transparent;
@@ -41,6 +41,16 @@ body{
 }
 section{
     padding:2rem 7%;
+}
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-bottom: 3.5rem;
+}
+.heading span{
+    color:var(--main-color);
 }
 
 .btn{
@@ -63,6 +73,7 @@ section{
     padding: 1.5rem 7%;
     position: fixed; top: 0; right: 0; left: 0;
     z-index: 1000;
+    background: var(--bkgd)
 }
 .head .logo img{
     height: 6rem;
@@ -196,7 +207,35 @@ color: var(--main-color);
     font-size: 2rem;
     padding: 1rem 0;
 }
-
+.about .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--black);
+}
+.about .row .image{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+.about .row .image img{
+    width:100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+.about .row .content h3{
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about .row .content p{
+    color: #ccc;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
