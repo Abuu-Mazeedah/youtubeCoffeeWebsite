@@ -39,6 +39,9 @@ html::-webkit-scrollbar-thumb{
 body{
     background: var(--bkgd);
 }
+section{
+    padding:2rem 7%;
+}
 
 .btn{
     margin-top: 1rem;
@@ -170,6 +173,32 @@ color: var(--main-color);
     right: 2rem;
 }
 
+.home{
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    background: url(images/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    width:60rem;
+}
+.home .content h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+.home .content p{
+    color: #eee;
+    font-weight: lighter;
+    line-height: 1.8;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+
 
 
 
@@ -214,6 +243,9 @@ color: var(--main-color);
     .head{
         padding: 1.5em 2rem;
     }
+    section{
+        padding:2rem;
+    }
 }
 @media(max-width:768px){
     #menu-btn{
@@ -236,6 +268,17 @@ color: var(--main-color);
         padding: .5rem;
         font-size: 2rem;
         color:var(--black);
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home h3{
+        font-size:4.5rem;
+    }
+    .home h3{
+        font-size:1.5rem;
     }
  
 }
